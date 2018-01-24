@@ -5,6 +5,22 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+.special {
+    list-style-type: none;
+    position: fixed;
+    padding-left: 0px;
+}
+
+.s {
+  margin-bottom: 50px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.s:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
 .for_blocks {
   margin:auto;
   max-width:1400px;
@@ -42,11 +58,16 @@ body {
 
 .shadow_box {
   width: 45%;
-  float: left;
+  height: 670px;
+  float: right;
   box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
   color:#000;
   background-color:#fff;
   margin:16px;
+}
+
+.shadow_box .shadow_box2 {
+  width: 1000px;
 }
 
 .button {
