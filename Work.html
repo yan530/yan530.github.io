@@ -12,10 +12,10 @@
 			<li class="s"> <a href="About_me.html"><img src="image/me.svg" alt="work" style="width:45px"></a></li>
 			<li class="s"> <a href="https://github.com/yan530"><img src="image/github.svg" alt="github" style="width:45px"></a></li>
 		</ul>
-    <ul>
+    <ul class = "jobs">
       <li>
-        <h6>Teaching Assistant (Fall 2017 - present)</h6>
-        <h6>@ University of Washington, Seattle, US</h6>
+        <h3>Teaching Assistant (Fall 2017 - present)</h3>
+        <p class = "location">@ University of Washington, Seattle, US</p>
         <p>
           I'm currently TAing for INFO 201 (Technical Foundation
           of Informatics). I helped students with command-line,
@@ -25,8 +25,8 @@
         </p>
       </li>
       <li>
-        <h6>Project Manager Assistant (Summer 2017)</h6>
-        <h6>@ Portedi, Ningbo, China</h6>
+        <h3>Project Manager Assistant (Summer 2017)</h3>
+        <p class = "location">@ Portedi, Ningbo, China</p>
         <p>
           During summer, I interned at a startup company. My mento
           was kind enough to let me try project management, front-end,
@@ -36,8 +36,8 @@
         </p>
       </li>
       <li>
-        <h6>IELTS Tutor (Summer 2016)</h6>
-        <h6>@ Ninbo Longre Training Center, Ningbo, China</h6>
+        <h3>IELTS Tutor (Summer 2016)</h3>
+        <p class = "location">@ Ninbo Longre Training Center, Ningbo, China</p>
         <p>
           I taught students English and prepared them for IELTS test.
           It was my first experience of teaching and I loved it.
@@ -47,8 +47,8 @@
         </p>
       </li>
       <li>
-        <h6>Student Dining Worker (Fall 2015)</h6>
-        <h6>@University of Washington, Seattle</h6>
+        <h3>Student Dining Worker (Fall 2015)</h3>
+        <p class = "location">@University of Washington, Seattle</p>
         <p>
           It was my first job ever. I helped preparing food and serving food
           for students and staffs. I learned how the food system works on
@@ -56,9 +56,26 @@
         </p>
       </li>
     </ul>
-    <a href="index.html">Back to Home</a>
     <br>
-    <br>
-    <button type="button" name="button">Up</button>
+    <button onclick="topFunction()" id="myBtn" title = "Go back up">Up</button>
   </body>
+
+  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </html>
